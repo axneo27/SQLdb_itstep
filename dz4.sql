@@ -20,6 +20,7 @@ from Teachers
 join Lectures on Lectures.TeacherId = Teachers.Id
 join GroupsLectures on GroupsLectures.LectureId = Lectures.Id
 join Groups on GroupsLectures.GroupId = Groups.Id
+where Groups.Name_ = 'P107'
 --5
 select Teachers.Surname, Faculties.Name
 from Teachers
